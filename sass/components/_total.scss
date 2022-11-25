@@ -1,0 +1,94 @@
+body {
+  background-color: $color-white;
+  color: $color-text-prime;
+  font-family: "Roboto", sans-serif;
+  /* font-style: normal;*/
+  /*font-weight: 400;*/
+  letter-spacing: 0.03em;
+}
+
+/*reset*/
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.link {
+  text-decoration: none;
+}
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+/*reset*/
+.container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  /* outline: 2px solid tomato; */
+}
+/* ховаємо заголовки */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+.subtitle {
+  color: $color-text-header;
+}
+.radio-btn,
+.button {
+  cursor: pointer;
+}
+.img {
+  margin: 0px;
+}
+.text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.section-title {
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-bottom: 50px;
+
+  /* outline: 2px solid tomato; */
+}
+
+.title-secondary {
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.button {
+  background-color: $color-blue;
+  color: $color-white;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
+  border-color: transparent;
+}

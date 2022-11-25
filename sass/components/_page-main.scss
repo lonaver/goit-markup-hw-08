@@ -1,0 +1,270 @@
+/*HERO*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: $color-background-black;
+  color: $color-white;
+
+  text-align: center;
+  /* for backgrond img */
+  max-width: 1600px;
+  background-image: linear-gradient(to right, $color-hero-bcg, $color-hero-bcg),
+    url("../images/HeroBCG.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* outline: 2px solid rgb(43, 19, 115); */
+}
+.hero__container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  /* outline: 2px solid tomato; */
+}
+.hero__title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  width: 696px;
+  min-height: 120px;
+
+  margin-top: 0px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero__btn {
+  display: inline-block;
+  min-width: 152px;
+  min-height: 30px;
+  border-radius: 4px;
+  padding: 10px 32px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*HERO*/
+
+/*all sections*/
+.our-priority {
+  padding-top: 94px;
+  /* outline: 2px solid tomato; */
+}
+.our-work,
+.our-command,
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /* outline: 2px solid tomato; */
+}
+
+/*h3 in our-priority and our-work*/
+.our-priority__subtitle,
+.our-work__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+/* all sections*/
+
+/*our priority*/
+.our-priority__subtitle--bottom {
+  margin-bottom: 10px;
+}
+
+.our-priority__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.our-priority__item {
+  width: calc((100% - 90px) / 4);
+}
+.our-priority__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  margin-bottom: 30px;
+  background-color: $color-background-grey;
+  /* outline: 2px solid tomato; */
+}
+.our-priority__icon {
+  display: block;
+}
+
+/*our-work*/
+.our-command {
+  background-color: $color-background-grey;
+}
+
+.our-work__list {
+  display: flex;
+  gap: 30px;
+}
+.our-work__item {
+  display: block;
+  position: relative;
+}
+.our-work__text {
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  width: 100%;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+.our-work__subtitle {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $color-white;
+}
+
+/*command*/
+.list-portfolio {
+  display: flex;
+  gap: 30px;
+  /* outline: 2px solid tomato; */
+}
+
+/*social*/
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 16px;
+  background-color: $color-white;
+  /* outline: 2px solid tomato; */
+}
+.social__item {
+  width: 44px;
+  height: 44px;
+  /* outline: 2px solid rgb(224, 83, 22); */
+}
+.social__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: $color-white;
+
+  transition: background-color $speed-link $cubick-link;
+  /* outline: 2px solid rgb(224, 22, 130); */
+  &:hover,
+  &:focus {
+    background-color: $color-blue;
+  }
+}
+
+.social__img {
+  fill: $color-icon;
+  transition: fill $speed-link $cubick-link;
+  /* outline: 2px solid rgb(71, 255, 102); */
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: $color-white;
+  }
+}
+
+.list-portfolio__text {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  padding-left: 10px;
+  background-color: $color-white;
+  /* outline: 2px solid tomato; */
+}
+/*h3 in our-command*/
+.list-portfolio__subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+.list-portfolio__item {
+  background-color: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.list-portfolio__profession {
+  margin-top: 10px;
+
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+}
+/*clients*/
+.clients__list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  border-radius: 4px;
+  /* outline: 2px solid tomato; */
+}
+.clients__item {
+  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  /* outline: 2px solid rgb(71, 255, 157); */
+}
+
+.clients__link {
+  display: block;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  border: 1px solid $color-icon;
+  border-radius: 4px;
+
+  transition: border-color $speed-link $cubick-link;
+  &:focus,
+  &:hover {
+    border-color: $color-blue;
+  }
+}
+.clients__icon {
+  display: block;
+  width: 106px;
+  height: 60px;
+
+  fill: $color-icon;
+
+  transition: fill $speed-link $cubick-link;
+  .clients__link:focus &,
+  .clients__link:hover & {
+    fill: $color-blue;
+  }
+}
+/*clients*/

@@ -1,0 +1,29 @@
+/* кольори Studio і Portfolio сторінка */
+$color-logo--right: rgba(0, 0, 0, 1);
+$color-border-bottom-header: rgba(236, 236, 236, 1);
+$color-blue: rgba(33, 150, 243, 1);
+$color-text-header: rgba(33, 33, 33, 1);
+$color-text-prime: rgba(117, 117, 117, 1);
+$color-text-adress: rgba(255, 255, 255, 0.6);
+$color-hero-bcg: rgba(47, 48, 58, 0.4);
+$color-icon: rgb(175, 177, 184);
+$color-icon-footer: rgba(255, 255, 255, 0.1);
+$color-background-black: rgba(47, 48, 58, 1);
+$color-white: rgba(255, 255, 255, 1);
+$color-background-grey: rgba(245, 244, 250, 1);
+/* кольори Portfolio сторінка */
+$color-radiobutton: rgba(245, 244, 250, 1);
+$color-border-list-img: rgba(238, 238, 238, 1);
+/* шрифти*/
+/* --color-test:#afb1b8; */
+/*   шрифт лого
+  font-family: 'Raleway';
+  font-weight: 700;
+
+  шрифт сторінки студио
+  font-family: Roboto;
+  font-weight: 400,500,700,900;
+ */
+/* переходи для анімації ховера і фокуса */
+$speed-link: 250ms;
+$cubick-link: cubic-bezier(0.4, 0, 0.2, 1);

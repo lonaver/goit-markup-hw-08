@@ -1,0 +1,233 @@
+/*  for modal window */
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition: opacity 1000ms $cubick-link;
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: rotateY(20deg) rotateX(35deg) translate(-50px, -50px)
+      skew(-35deg, 10deg);
+    opacity: 0;
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+
+  background: $color-white;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+
+  transform: rotateY(0) rotateX(0deg) translate(-50%, -50%) skew(0deg, 0deg);
+  opacity: 1;
+
+  transition: transform 1000ms $cubick-link;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $color-white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.modal__icon-close {
+  fill: rgba(0, 0, 0, 1);
+
+  transition: fill $speed-link $cubick-link;
+  .modal__btn-close:focus &,
+  .modal__btn-close:hover & {
+    fill: $color-blue;
+  }
+}
+
+.modal-form {
+  width: 100%;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 41px;
+  padding-right: 39px;
+  padding-bottom: 40px;
+}
+
+.modal-form__subtitle {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $color-text-header;
+}
+
+/*group inputs*/
+.set-form {
+  display: block;
+  width: 100%;
+  margin-top: 12px;
+  margin-left: auto;
+  margin-left: auto;
+}
+
+.set-form__label {
+  position: relative;
+
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 1.17;
+  /* identical to box height */
+  letter-spacing: 0.01em;
+
+  color: $color-text-prime;
+
+  &:focus-within input,
+  &:focus-within textarea {
+    outline: none;
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: $color-blue;
+  }
+}
+.set-form__input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  padding-left: 42px;
+  margin-top: 4px;
+  transition: border-color $speed-link $cubick-link;
+
+  /* outline: 2px solid rgb(71, 255, 102); */
+}
+
+.set-form__textarea {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  margin-top: 4px;
+
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  resize: none;
+
+  transition: border-color $speed-link $cubick-link;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.set-form__icon {
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  fill: $color-logo--right;
+  transition: fill $speed-link $cubick-link;
+  .set-form__label:focus-within & {
+    fill: $color-blue;
+  }
+}
+/*group inputs*/
+
+/* Checkbox */
+.modal__check-policy {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.modal__label-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
+  color: $color-text-prime;
+  /* outline: 2px solid rgb(71, 255, 102); */
+}
+.modal__icon-policy {
+  padding: 0;
+  margin-right: 8px;
+  background-color: $color-white;
+  fill: $color-white;
+  border: 2px solid rgb(33, 33, 33);
+  transition: background-color $speed-link $cubick-link,
+    fill $speed-link $cubick-link, border-color $speed-link $cubick-link;
+
+  .modal__check-policy:checked + & {
+    background-color: $color-blue;
+    fill: $color-white;
+    border-color: transparent;
+    background-origin: border-box;
+  }
+}
+.modal__link-policy {
+  display: inline-block;
+  padding-left: 4px;
+  color: $color-blue;
+}
+/*Checkbox*/
+
+/*button*/
+.modal__btn-send {
+  display: block;
+  max-width: 200px;
+  max-height: 50px;
+  padding: 10px 52px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
