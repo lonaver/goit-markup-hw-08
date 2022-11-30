@@ -18,7 +18,7 @@
   @media screen and (min-width: 768px) {
     justify-content: center;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
@@ -51,13 +51,11 @@
   }
 }
 .img-list {
-  display: block;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
+  // display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
 }
 
 /* list card */
@@ -78,12 +76,12 @@
   @media screen and (min-width: 768px) {
     max-width: calc((100% - 60px) / 2);
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     max-width: calc((100% - 90px) / 3);
   }
 }
 .card--position:last-child {
-  @media screen and (min-width: 768px) and (max-width: 1559px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-right: auto;
     margin-left: 15px;
   }
@@ -104,7 +102,7 @@
     padding-top: 49px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding: 63px 24px;
   }
   background: rgba(33, 150, 243, 0.9);

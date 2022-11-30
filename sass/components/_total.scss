@@ -28,14 +28,10 @@ p {
 }
 /*reset*/
 .container {
-  max-width: 480px;
   padding: 0px 15px;
+  margin: 0px auto;
 
-  @media screen and (min-width: 768px) {
-    margin: 0px auto;
-    max-width: 768px;
-  }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
   }
   /* outline: 2px solid tomato; */
@@ -63,7 +59,7 @@ p {
 .img {
   display: block;
   margin: 0px;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .text {
@@ -73,8 +69,11 @@ p {
 .section-title {
   padding-top: 0px;
   padding-left: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
   /* outline: 2px solid tomato; */
 }
 
@@ -82,7 +81,7 @@ p {
   font-size: 28px;
   line-height: calc(33px / 28px);
   text-align: center;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 36px;
     line-height: 1.17;
   }

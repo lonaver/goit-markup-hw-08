@@ -2,17 +2,17 @@
   border-bottom: 1px solid $color-border-bottom-header;
 }
 .container-header {
-  display: inline-block;
-  width: 480px;
+  // display: inline-block;
+  // min-width: 480px;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 768px;
+    max-width: 768px;
   }
   //
-  @media screen and (min-width: 1600px) {
-    width: 1200px;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
   }
   /* outline: 2px solid tomato; */
 }
@@ -20,12 +20,12 @@
 .nav {
   display: flex;
   align-items: center;
-
+  justify-content: space-around;
   @media screen and (min-width: 768px) {
     justify-content: center;
     margin-right: 88px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     gap: 93px;
   }
 }
@@ -34,7 +34,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: calc(28px / 24px);
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: 1.19;
   }
@@ -63,10 +63,10 @@
     display: inline-block;
     margin-left: auto;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
     gap: 50px;
   }
 }
@@ -126,12 +126,12 @@
 .header .address-head__item {
   display: block;
   margin-bottom: 0px;
-  @media screen and (min-width: 768px) and (max-width: 1559px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     margin-bottom: 10px;
   }
 }
 .header .address-head__item:last-child {
-  @media screen and (max-width: 1559px) {
+  @media screen and (max-width: 1199px) {
     margin-bottom: 0px;
   }
   // position: relative;
@@ -140,7 +140,7 @@
 .address-head__link {
   display: block;
   padding: 0;
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -161,7 +161,7 @@
     font-size: 12px;
     line-height: calc(14px / 12px);
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.14;
   }
@@ -178,11 +178,12 @@
 }
 
 .address-head__icon {
-  display: none;
-  @media screen and (min-width: 768px) {
+  // display: none;
+  margin-right: 8px;
+  fill: currentColor;
+  transition: fill $speed-link $cubick-link;
+  @media screen and (min-width: 1200px) {
     margin-right: 10px;
-    fill: currentColor;
-    transition: fill $speed-link $cubick-link;
   }
   /* outline: 2px solid tomato; */
 }

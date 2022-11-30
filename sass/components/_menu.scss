@@ -43,7 +43,7 @@
   top: 0px;
   left: 0;
   width: 100vw;
-  height: 796px;
+  height: 100vh;
   padding-top: 48px;
   padding-left: 40px;
   background-color: $color-white;
@@ -68,7 +68,8 @@
 
   & .address-head {
     display: block;
-    margin-top: 306px;
+    // margin-top: 306px;
+    margin-top: calc(100vh - 234px - 256px);
   }
 
   & .address-head__item {
