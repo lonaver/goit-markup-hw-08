@@ -1,10 +1,18 @@
 /*HERO*/
 .hero {
+  display: flex;
+  justify-content: center;
+
+  max-width: 1600px;
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   background-color: $color-background-black;
   color: $color-white;
 
   text-align: center;
-  // max-width: 480px;
 
   /* for backgrond img */
   background-image: linear-gradient(to right, $color-hero-bcg, $color-hero-bcg),
@@ -12,24 +20,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    // max-width: 768px;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1600px;
-  }
 
-  /* outline: 2px solid rgb(43, 19, 115); */
+  // outline: 2px solid rgb(43, 19, 115);
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
@@ -50,19 +42,22 @@
 .hero__container {
   padding-top: 118px;
   padding-bottom: 118px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   @media screen and (min-width: 768px) {
-    padding-left: 204px;
-    padding-right: 204px;
+    width: 768px;
   }
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
-    padding-left: 252px;
-    padding-right: 252px;
   }
-  /* outline: 2px solid tomato; */
+  // outline: 2px solid rgb(71, 255, 92);
 }
 .hero__title {
   font-weight: 900;
@@ -72,22 +67,24 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 30px;
 
+  width: 360px;
+  height: 84px;
+  margin-bottom: 30px;
   @media screen and (min-width: 1200px) {
+    width: 696px;
+    height: 120px;
+
     font-size: 44px;
-    line-height: calc(60px / 66px);
+    line-height: calc(60px / 44px);
   }
+  // outline: 2px solid tomato;
 }
 
 .hero__btn {
-  display: inline-block;
   text-align: center;
   min-width: 200px;
   min-height: 50px;
-
-  margin-top: 0px;
-  margin-bottom: 0px;
   padding: 10px 24px;
 
   border-radius: 4px;
