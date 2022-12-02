@@ -24,7 +24,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container-header container">
+      <div class="container-header">
         <nav class="nav">
           <div class="nav__logo">
             <a href="./index.html" class="link">
@@ -94,7 +94,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="hero__container">
+        <div class="hero__container container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button hero__btn" data-modal-open>
             Замовити послугу
@@ -182,7 +182,11 @@
             <li class="our-work__item">
               <img
                 class="img"
-                src="./images/WhatWeDo1.jpg"
+                srcset="
+                  ./images/WhatWeDoimg@1x-min.jpg 1x,
+                  ./images/WhatWeDoimg@2x-min.jpg 2x
+                "
+                src="./images/WhatWeDoimg@1x-min.jpg"
                 alt="Набір блоксхеми на планшеті"
                 width="370"
               />
@@ -193,7 +197,11 @@
             <li class="our-work__item">
               <img
                 class="img"
-                src="./images/WhatWeDo2.jpg"
+                srcset="
+                  ./images/WhatWeDoimg@1x-1-min.jpg 1x,
+                  ./images/WhatWeDoimg@2x-1-min.jpg 2x
+                "
+                src="./images/WhatWeDoimg@1x-1-min.jpg"
                 alt="На моніторі модель телефона"
                 width="370"
               />
@@ -204,7 +212,11 @@
             <li class="our-work__item">
               <img
                 class="img"
-                src="./images/WhatWeDo3.jpg"
+                srcset="
+                  ./images/WhatWeDoimg@1x-2-min.jpg 1x,
+                  ./images/WhatWeDoimg@2x-2-min.jpg 2x
+                "
+                src="./images/WhatWeDoimg@1x-2-min.jpg"
                 alt="Работа з схемой кольорів"
                 width="370"
               />
@@ -227,10 +239,15 @@
               <img
                 class="img"
                 srcset="
-                  ./images/ProductDesiner.jpg    1x,
-                  ./images/ProductDesiner@x2.jpg 2x
+                  ./images/img1_450@1x-min.jpg 270w,
+                  ./images/img1_450@2x-min.jpg 330w,
+                  ./images/img1_354@1x-min.jpg 418w,
+                  ./images/img1_354@2x-min.jpg 540w,
+                  ./images/img1_270@1x-min.jpg 660w,
+                  ./images/img1_270@2x-min.jpg 836w
                 "
-                src="./images/ProductDesiner.jpg"
+                src="./images/img1_450@1x-min.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
                 alt="Фото дизайнера"
               />
               <div class="list-portfolio__text">
@@ -272,10 +289,15 @@
               <img
                 class="img"
                 srcset="
-                  ./images/FrontedDeveloper.jpg    1x,
-                  ./images/FrontedDeveloper@x2.jpg 2x
+                  ./images/img2_450@1x-min.jpg 270w,
+                  ./images/img2_450@2x-min.jpg 330w,
+                  ./images/img2_354@1x-min.jpg 418w,
+                  ./images/img2_354@2x-min.jpg 540w,
+                  ./images/img2_270@1x-min.jpg 660w,
+                  ./images/img2_270@2x-min.jpg 836w
                 "
-                src="./images/FrontedDeveloper.jpg"
+                src="./images/img2_450@1x-min.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
                 alt="Фото розробника"
               />
               <div class="list-portfolio__text">
@@ -314,8 +336,16 @@
             <li class="list-portfolio__item">
               <img
                 class="img"
-                srcset="./images/Marketing.jpg 1x, ./images/Marketing@x2.jpg 2x"
-                src="./images/Marketing.jpg"
+                srcset="
+                  ./images/img3_450@1x-min.jpg 270w,
+                  ./images/img3_450@2x-min.jpg 330w,
+                  ./images/img3_354@1x-min.jpg 418w,
+                  ./images/img3_354@2x-min.jpg 540w,
+                  ./images/img3_270@1x-min.jpg 660w,
+                  ./images/img3_270@2x-min.jpg 836w
+                "
+                src="./images/img3_450@1x-min.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
                 alt="Фото менеджера"
               />
               <div class="list-portfolio__text">
@@ -357,10 +387,15 @@
               <img
                 class="img"
                 srcset="
-                  ./images/UIDesigner.jpg    1x,
-                  ./images/UIDesigner@x2.jpg 2x
+                  ./images/img4_450@1x-min.jpg 270w,
+                  ./images/img4_450@2x-min.jpg 330w,
+                  ./images/img4_354@1x-min.jpg 418w,
+                  ./images/img4_354@2x-min.jpg 540w,
+                  ./images/img4_270@1x-min.jpg 660w,
+                  ./images/img4_270@2x-min.jpg 836w
                 "
-                src="./images/UIDesigner.jpg"
+                src="./images/img4_450@1x-min.jpg"
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 330px, (min-width: 480px) 418px, 100vw"
                 alt="Фото дизайнера інтерфейса"
               />
               <div class="list-portfolio__text">

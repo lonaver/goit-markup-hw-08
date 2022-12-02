@@ -15,45 +15,95 @@
   text-align: center;
 
   /* for backgrond img */
-  background-image: linear-gradient(to right, $color-hero-bcg, $color-hero-bcg),
-    url("../images/HeroBCG.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  // outline: 2px solid rgb(43, 19, 115);
-}
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
+  @media screen and (max-width: 479px) {
     background-image: linear-gradient(
         to right,
         $color-hero-bcg,
         $color-hero-bcg
       ),
-      url("../images/HeroBCG@x2.jpg");
+      url("../images/Headerimg_480@1x-min.jpg.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $color-hero-bcg,
+          $color-hero-bcg
+        ),
+        url("../images/Headerimg_480@2x-min.jpg");
+    }
   }
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+        to right,
+        $color-hero-bcg,
+        $color-hero-bcg
+      ),
+      url("../images/Headerimg_768@1x-min.jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $color-hero-bcg,
+          $color-hero-bcg
+        ),
+        url("../images/Headerimg_768@2x-min.jpg");
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(
+        to right,
+        $color-hero-bcg,
+        $color-hero-bcg
+      ),
+      url("../images/Headerimg_1600@1x-min.jpg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          $color-hero-bcg,
+          $color-hero-bcg
+        ),
+        url("../images/Headerimg_1600@2x-min.jpg");
+    }
+  }
+
+  // outline: 2px solid rgb(43, 19, 115);
 }
 
 .hero__container {
-  padding-top: 118px;
-  padding-bottom: 118px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 480px;
+  // padding-top: 118px;
+  // padding-bottom: 118px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  margin: 0;
+  @media screen and (max-width: 340px) {
+    padding-top: auto;
+    padding-bottom: auto;
   }
+  @media screen and (min-width: 340px) and (max-width: 479px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
+  @media screen and (min-width: 480px) {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     padding-top: 200px;
     padding-bottom: 200px;
   }
@@ -67,10 +117,18 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-
-  width: 360px;
   height: 84px;
   margin-bottom: 30px;
+
+  // змінила на max-width 02.12
+  @media screen and (max-width: 479px) {
+    max-width: 360px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 360px;
+    max-width: 100%;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 696px;
     height: 120px;
@@ -172,6 +230,7 @@
   //   padding-top: 60px;
   // }
   @media screen and (min-width: 1200px) {
+    display: block;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -320,32 +379,22 @@
   padding-bottom: 0px;
   padding-left: 0px;
   padding-right: 0px;
-  width: calc(100% - 30px) / 2;
+  width: calc((100% - 30px) / 2);
+  @media screen and (min-width: 480px) {
+    width: calc((480px - 30px * 2) / 2);
+  }
+
   @media screen and (min-width: 768px) {
-    width: calc(100% - 30px) / 3;
+    width: calc((768px - 30px * 3) / 3);
   }
   @media screen and (min-width: 1200px) {
-    width: calc((100% - 30px * 6) / 6);
+    width: calc((1200px - 30px * 6) / 6);
   }
 
   /* outline: 2px solid rgb(71, 255, 157); */
 }
 
 .clients__link {
-  display: block;
-  padding-bottom: 16px;
-  padding-top: 16px;
-  padding-left: 52px;
-  padding-right: 52px;
-  @media screen and (min-width: 768px) {
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-  @media screen and (min-width: 1200px) {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-
   border: 1px solid $color-icon;
   border-radius: 4px;
 
@@ -353,6 +402,31 @@
   &:focus,
   &:hover {
     border-color: $color-blue;
+  }
+
+  // @media screen and (max-width: 479px) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // padding-left: auto;
+  // padding-right: auto;
+  // }
+  @media screen and (min-width: 480px) {
+    // display: block;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    padding-left: 52px;
+    padding-right: 52px;
+  }
+  @media screen and (min-width: 768px) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 .clients__icon {
