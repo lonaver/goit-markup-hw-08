@@ -737,16 +737,10 @@ p {
   text-align: center;
   /* for backgrond img */
 }
-@media screen and (min-width: 1200px) {
-  .hero {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
 @media screen and (max-width: 479px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_480@1x-min.jpg.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_480@1x-min.jpg.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_480@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_480@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -760,8 +754,8 @@ p {
 }
 @media screen and (min-width: 480px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_768@1x-min.jpg.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_768@1x-min.jpg.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_768@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_768@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -775,8 +769,10 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_1600@1x-min.jpg.jpg");
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_1600@1x-min.jpg.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/Headerimg_1600@1x-min.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/Headerimg_1600@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -801,18 +797,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   margin: 0;
-}
-@media screen and (max-width: 340px) {
-  .hero__container {
-    padding-top: auto;
-    padding-bottom: auto;
-  }
-}
-@media screen and (min-width: 340px) and (max-width: 479px) {
-  .hero__container {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  padding-top: 118px;
+  padding-bottom: 118px;
 }
 @media screen and (min-width: 480px) {
   .hero__container {

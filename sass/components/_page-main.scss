@@ -4,10 +4,6 @@
   justify-content: center;
 
   max-width: 1600px;
-  @media screen and (min-width: 1200px) {
-    margin-left: auto;
-    margin-right: auto;
-  }
 
   background-color: $color-background-black;
   color: $color-white;
@@ -21,10 +17,11 @@
         $color-hero-bcg,
         $color-hero-bcg
       ),
-      url("../images/Headerimg_480@1x-min.jpg.jpg");
+      url("../images/Headerimg_480@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -42,10 +39,11 @@
         $color-hero-bcg,
         $color-hero-bcg
       ),
-      url("../images/Headerimg_768@1x-min.jpg.jpg");
+      url("../images/Headerimg_768@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -58,15 +56,18 @@
     }
   }
   @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(
         to right,
         $color-hero-bcg,
         $color-hero-bcg
       ),
-      url("../images/Headerimg_1600@1x-min.jpg.jpg");
+      url("../images/Headerimg_1600@1x-min.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
@@ -89,14 +90,14 @@
   flex-direction: column;
   align-items: center;
   margin: 0;
-  @media screen and (max-width: 340px) {
-    padding-top: auto;
-    padding-bottom: auto;
-  }
-  @media screen and (min-width: 340px) and (max-width: 479px) {
-    padding-top: 118px;
-    padding-bottom: 118px;
-  }
+  // @media screen and (max-width: 340px) {
+  //   padding-top: auto;
+  //   padding-bottom: auto;
+  // }
+  // @media screen and (min-width: 340px) and (max-width: 479px) {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  // }
 
   @media screen and (min-width: 480px) {
     padding-top: 118px;
